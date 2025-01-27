@@ -36,6 +36,18 @@ Module ProgramFlow
         ElseIf user > 4 Then
             Console.WriteLine(user > 4)
         End If
+
+        user -= 3
+        'If no "If" statements are true, defaults to "else" statement
+        If user > 6 Then
+            Console.WriteLine($"{user} is such a big number!")
+        ElseIf user > 3 Then
+            Console.WriteLine($"{user} really? that's all?")
+        ElseIf user > 4 Then
+            Console.WriteLine($"{user}? Cmon, you can do better than that.")
+        Else
+            Console.WriteLine($"Pathetic.")
+        End If
     End Sub
 
 End Module
